@@ -4,31 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Site</title>
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    :root {
-      --yinmn-blue: #4c6085ff;
-      --celestial-blue: #39a0edff;
-      --aquamarine: #36f1cdff;
-      --mint: #13c4a3ff;
-      --black-olive: #32322cff;
-    }
-    /* Tailwind theme overrides */
-    tailwind.config = {
+  
+  <!-- Tailwind CDN + Config -->
+  <script>
+    tailwind = {
       theme: {
         extend: {
           colors: {
-            'yinmn-blue': 'var(--yinmn-blue)',
-            'celestial-blue': 'var(--celestial-blue)',
-            'aquamarine': 'var(--aquamarine)',
-            'mint': 'var(--mint)',
-            'black-olive': 'var(--black-olive)'
+            'yinmn-blue': '#4c6085',
+            'celestial-blue': '#39a0ed',
+            'aquamarine': '#36f1cd',
+            'mint': '#13c4a3',
+            'black-olive': '#32322c'
           }
         }
       }
     }
-  </style>
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="font-sans bg-black-olive text-white">
 
@@ -54,15 +47,15 @@
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-center">
       <div class="bg-yinmn-blue p-6 rounded-lg hover:scale-105 transition">
         <h2 class="text-2xl font-bold mb-2">Feature 1</h2>
-        <p>A sentence.</p>
+        <p>Highlight your first amazing feature here.</p>
       </div>
       <div class="bg-celestial-blue p-6 rounded-lg hover:scale-105 transition">
         <h2 class="text-2xl font-bold mb-2">Feature 2</h2>
-        <p>Something Rather</p>
+        <p>Describe your second feature in a clean layout.</p>
       </div>
       <div class="bg-aquamarine p-6 rounded-lg hover:scale-105 transition">
         <h2 class="text-2xl font-bold mb-2">Feature 3</h2>
-        <p>Some Such</p>
+        <p>Show off your third feature with style.</p>
       </div>
     </div>
   </section>
